@@ -4,5 +4,7 @@ class SayController < ApplicationController
   end
 
   def goodbye
+    @future_time = 1.hour.from_now.localtime
+    @files = Dir.glob('*')
   end
 end

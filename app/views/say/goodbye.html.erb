@@ -1,3 +1,9 @@
-<h1>Goodbye!</h1>
-<p>Stay safe traveler.</p>
+<h1>Later, Space <%= "Cow" + "boy"%> </h1>
+<p>Stay safe traveler. We'll see you at <%=@future_time %></p>
+
 <p><%= link_to("*Stay with the old timer*", say_hello_path)%></p>
+    <%= @files.each do |file| %>
+    <ul>
+    file name is : <%= file %>
+    </ul>
+    <% end %>
